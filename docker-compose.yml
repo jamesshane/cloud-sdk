@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  gcloud:
+    image: google/cloud-sdk
+    volumes:
+    - cloud:/tmp
+    - ./files:/tmp/files
+volumes:
+  cloud: {}
